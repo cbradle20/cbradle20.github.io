@@ -7,27 +7,25 @@ html, body {
 
 html {
   font-size: 10px;
-  font-family: 'Grenze Gotisch', cursive;
 }
 
 body {
   width: 70%;
   min-width: 800px;
   margin: 0 auto;
-  background-color: #6091C3;
-  font-family: 'Grenze Gotisch', cursive;
+  background-color: powderblue;
 
 }
 
 /* || typography */
 
 h1, h2, h3 {
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Grenze Gotisch', cursive;
   color: #2a2a2a;
 }
 
 p, input, li {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Grenze Gotisch', cursive;
   color: #2a2a2a;
 }
 
