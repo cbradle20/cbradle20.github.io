@@ -2,17 +2,17 @@
 
 form.boxes{
   display: table;
-  justify-content: center;
+  
 }
 
 div.boxes{
   display: table-row;
-  justify-content: center;
+  
 }
 
 label, input{
   display: table-cell;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 label{
