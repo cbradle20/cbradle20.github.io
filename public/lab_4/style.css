@@ -7,19 +7,23 @@ html{
 div.header{
   display : flex;
   margin-bottom : 10px;
-  justify-content: center;
+  justify-content : center;
 }
 
 /*form input boxes*/
 
 form.boxes{
-  display: table;
-  
+  display : table;
+  display : flex;
+  justify-content : center;
+  align-items : center;
 }
 
 div.boxes{
-  display: table-row;
-  
+  display : table-row;
+  display : flex;
+  justify-content : center;
+  align-items : center;
 }
 
 label, input{
