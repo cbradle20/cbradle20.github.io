@@ -17,5 +17,6 @@ label, input{
 
 label{
   padding-right: 10px;
+  justify-content: center;
 }
 
