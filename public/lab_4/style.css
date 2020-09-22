@@ -16,14 +16,12 @@ form.boxes{
   display : table;
   display : flex;
   justify-content : center;
-  align-items : center;
 }
 
 div.boxes{
   display : table-row;
   display : flex;
   justify-content : center;
-  align-items : center;
 }
 
 label, input{
