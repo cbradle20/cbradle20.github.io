@@ -1,3 +1,14 @@
+/*layout*/
+
+html{
+  font-size: 10 px;
+}
+/*header*/
+div.header{
+  margin-bottom : 10px;
+  justify-content: center;
+}
+
 /*form input boxes*/
 
 form.boxes{
