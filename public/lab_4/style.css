@@ -21,7 +21,6 @@ form.boxes{
 div.boxes{
   display : table-row;
   display : flex;
-  justify-content : center;
 }
 
 label, input{
