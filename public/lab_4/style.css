@@ -46,6 +46,14 @@ body{
   align-items : center;
 }
 
+.flex-inner{
+  padding : 0 8px;
+  justify-content : space-between;
+
+}
+
+
+
 label, input{
   display: table-cell;
   justify-content: space-between;
