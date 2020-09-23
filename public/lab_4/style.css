@@ -15,12 +15,12 @@ div.header{
 form.boxes{
   display : table;
   display : flex;
-  justify-content : center;
+
 }
 
 div.boxes{
   display : table-row;
-  display : flex;
+
 }
 
 label, input{
