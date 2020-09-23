@@ -49,10 +49,17 @@ body{
 .flex-inner{
   padding : 0 8px;
   justify-content : space-between;
-
 }
 
 
+
+
+.flex-outer > li > label,
+.flex-outer li p{
+  flex : 1 0 120px;
+  max-width : 220px;
+
+}
 
 label, input{
   display: table-cell;
