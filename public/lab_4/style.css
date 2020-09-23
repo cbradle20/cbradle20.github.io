@@ -10,22 +10,40 @@ div.header{
   justify-content : center;
 }
 
+/*body*/
+body{
+  background: lime;
+
+}
+
+.container{
+  width : 80%;
+  max-width : 1200px;
+  margin : 0;
+}
+
+.container *{
+  box-sizing : border-box;
+}
+
 /*form input boxes*/
 
-form.boxes{
-  display : table;
-  display : inline;
-}
-
-div.boxes{
-  display : table-row;
-
-}
 
 .flex-outer{
   list-style-type : none;
   padding : 0px 16px;
   max-width : 800px;
+}
+.flex-inner, .flex-outer{
+  list-style-type : none;
+  padding : 0;
+
+}
+
+.flex-outer li, .flex-inner{
+  display : flex;
+  flex-wrap : wrap;
+  align-items : center;
 }
 
 label, input{
