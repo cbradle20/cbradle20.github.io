@@ -65,8 +65,13 @@ body > * {
   padding: 1%;
 }
 
+<<<<<<< HEAD
 .main, .header, nav, .article, .aside, footer, section {
   background-color: yellow;
+=======
+.main, .header, nav, .article, .aside, .footer, section {
+  background-color: rgba(0,255,0,0.5);
+>>>>>>> 216f73718e5015343209d6fbf68c1524d56e6ab2
   padding: 1%;
 }
 
@@ -75,7 +80,7 @@ h1 {
   text-transform: uppercase;
 }
 
-header img {
+.header img {
   display: block;
   height: 60px;
   padding-top: 20.15px;
