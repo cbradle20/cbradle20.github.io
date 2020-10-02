@@ -24,7 +24,8 @@ html, body {
     display:flex;
     margin-bottom: 15px;
     padding : 15px;
-    
+    align-items:center;
+    flex-wrap: wrap;
 }
 
 div > h2 + p + ol {
