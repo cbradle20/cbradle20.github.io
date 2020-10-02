@@ -32,3 +32,8 @@ header img{
   .container *{
     box-sizing : border-box;
   }
+
+  div > ol {
+
+    
+  }
