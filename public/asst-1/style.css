@@ -23,9 +23,12 @@ header img{
 }
 
 /*body*/
-.wrapper{
-    font-size: 10px;
-
-}
-
-
+.container{
+    width : 80%;
+    max-width : 1200px;
+    margin : 0;
+  }
+  
+  .container *{
+    box-sizing : border-box;
+  }
