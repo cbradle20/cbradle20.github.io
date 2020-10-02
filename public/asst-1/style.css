@@ -23,6 +23,8 @@ html, body {
 .header{
     display:flex;
     margin-bottom: 15px;
+    padding : 15px;
+    
 }
 
 div > h2 + p + ol {
@@ -47,6 +49,14 @@ h1, h2, h3 {
 }
 
 /*body*/
+img {
+    border-radius: 4px;
+}
+.one{
+
+    margin-right: 15px;
+}
+
 
 .container{
     width : 80%;
