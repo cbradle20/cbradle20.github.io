@@ -1,7 +1,21 @@
 /*basic layout*/
-html{
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
     font-size: 10px;
-}
+  
+  }
+  
+  body {
+    width: 70%;
+    min-width: 800px;
+    margin: 0 auto;
+    background-color: #6091C3;
+  }
+  
 
 /*header*/
 
@@ -35,5 +49,5 @@ header img{
 
   div > ol {
 
-    
+
   }
