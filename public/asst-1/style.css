@@ -22,7 +22,7 @@ html, body {
 
 .header{
     display:flex;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 header img{
@@ -49,4 +49,3 @@ h1, h2, h3 {
     margin : 0;
   }
 
-  
