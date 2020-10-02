@@ -48,12 +48,5 @@ h1, h2, h3 {
     max-width : 1200px;
     margin : 0;
   }
+
   
-  .container *{
-    box-sizing : border-box;
-  }
-
-  div > ol {
-
-
-  }
