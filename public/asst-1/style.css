@@ -31,12 +31,18 @@ header img{
     padding-top : 20.15px;
 }
 
+h1, h2, h3 {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #2a2a2a;
+  }
+
 /*Middle image& flex image to side of body with lists*/
 .caption{
     display: block; 
 }
 
 /*body*/
+
 .container{
     width : 80%;
     max-width : 1200px;
