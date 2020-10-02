@@ -1,0 +1,32 @@
+/*basic layout*/
+html{
+    font-size: 10px;
+}
+
+/*header*/
+.wrapper{
+    font-size: 10px;
+
+}
+
+
+.header{
+    display:flex;
+    margin-bottom: 10px;
+}
+
+header img{
+    display : block;
+    height : 60px;
+    padding-top : 20.15px;
+}
+
+/*Middle image& flex image to side of body with lists*/
+.caption{
+    display: block; 
+}
+
+/*body*/
+
+
+
