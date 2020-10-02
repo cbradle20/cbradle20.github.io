@@ -4,10 +4,6 @@ html{
 }
 
 /*header*/
-.wrapper{
-    font-size: 10px;
-
-}
 
 
 .header{
@@ -27,6 +23,9 @@ header img{
 }
 
 /*body*/
+.wrapper{
+    font-size: 10px;
 
+}
 
 
