@@ -63,4 +63,5 @@ h1, h2, h3 {
 }
 .one{
     margin-right: 15px;
+    flex: 0 1 auto;
 }
