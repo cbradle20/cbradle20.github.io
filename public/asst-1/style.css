@@ -13,7 +13,7 @@ html, body {
     width: 70%;
     min-width: 800px;
     margin: 0 auto;
-    background-color: #6091C3;
+    background-color: #80a8cf;
   }
   
 
@@ -46,8 +46,12 @@ header img{
 
 h1, h2, h3 {
     font-family: 'Cinzel Decorative', cursive;
-    color: #2a2a2a;
+    color: #cae0e7;
   }
+
+h2, h3 {
+  color: #17637a;
+}
 
 /*Middle image& flex image to side of body with lists*/
 .caption{
