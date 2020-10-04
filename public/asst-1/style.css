@@ -31,6 +31,7 @@ html, body {
     flex-wrap: wrap;
     justify-content: space-around;
     margin:0;
+    margin-bottom: 15px;
 }
 
 .container{
@@ -81,9 +82,8 @@ h2, h3 {
     border-style: solid;
 }
 .one{
-    
     flex: 0 1 auto;
-    width: 175px
+    width: 175px;
     margin-right: 15px;
 }
 /*
