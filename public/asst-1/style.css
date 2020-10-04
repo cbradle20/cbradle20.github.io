@@ -42,6 +42,7 @@ html, body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+  justify-content: center;
 }
 
 div > h2 + p + ol {
@@ -86,7 +87,7 @@ h2, h3 {
 
 .one{
     
-    flex: 0 1 auto;
+    flex: 1 0 auto;
     width: 175px;
     margin-right : 15px;}
     
