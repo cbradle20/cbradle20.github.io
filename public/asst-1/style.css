@@ -42,6 +42,7 @@ html, body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+  justify-content: center;
 }
 
 div > h2 + p + ol {
@@ -86,23 +87,22 @@ h2, h3 {
     border-width: 1px;
     border-style: solid;
 }
+
 .one{
+    
     flex: 1 0 auto;
     width: 175px;
-    margin-right: 15px;
-}
-
+    margin-right : 15px;}
+    
 .two{
-  flex: 0 2 auto;
-  background: white;
-  padding: 15px;
-  justify-content: center;
+    flex: 0 2 auto;
+    background: white;
+    padding: 15px;
 }
-
-
+      
+/*
 .wrapper {
-  display: flex;
-  flex: 1 0 auto;
+  display: flex
   flex-direction: column;
   align-items: center;
-}
+}*/
