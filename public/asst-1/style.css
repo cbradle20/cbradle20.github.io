@@ -82,10 +82,17 @@ h2, h3 {
     border-style: solid;
 }
 .one{
-    flex: 0 1 auto;
+    flex: 1 0 auto;
     width: 175px;
     margin-right: 15px;
 }
+
+.two{
+  flex: 0 2 auto;
+  background: white;
+  padding: 15px;
+}
+
 /*
 .wrapper {
   display: flex
