@@ -21,11 +21,16 @@ html, body {
 
 
 .header{
+    background:  #031930;
+    color: rgb(255, 255, 255);
     display:flex;
+    flex-direction:row;
     margin-bottom: 15px;
     padding : 15px;
     align-items:center;
     flex-wrap: wrap;
+    justify-content: space-around;
+    margin:0;
 }
 
 div > h2 + p + ol {
@@ -64,4 +69,11 @@ h1, h2, h3 {
 .one{
     margin-right: 15px;
     flex: 0 1 auto;
+    width: 175px
 }
+/*
+.wrapper {
+  display: flex
+  flex-direction: column;
+  align-items: center;
+}*/
