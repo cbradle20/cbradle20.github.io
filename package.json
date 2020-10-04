@@ -1,31 +1,36 @@
 {
-  "name": "node-js-getting-started",
-  "version": "0.3.0",
-  "description": "A sample Node.js app using Express 4",
-  "engines": {
-    "node": "12.x"
-  },
+  "name": "inst377-fa2020",
+  "version": "1.0.0",
+  "description": "Repository for INST377 Dynamic Web Applications Fall 2020 at UMD",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "test": "node test.js"
+    "test": "node --experimental-modules lab_utils/html_validation_error_gen.js",
+    "test2": "node --experimental-modules lab_utils/html_validation_error_gen.js && npx cypress open",
+    "start": "nodemon server.js"
   },
+  "engines": {
+    "node": "13.x"
+  },
+  "author": "Alex Leitch",
+  "license": "ISC",
   "dependencies": {
-    "ejs": "^2.5.6",
-    "express": "^4.15.2"
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "dotenv": "^8.2.0",
+    "recursive-readdir": "^2.2.2",
+    "chalk": "^4.1.0",
+    "nodemon": "^2.0.4"
   },
   "devDependencies": {
-    "got": "^11.3.0",
-    "tape": "^4.7.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
-  },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
-  "license": "MIT"
+    "email-validator": "^2.0.4",
+    "html-validate": "^3.0.0",
+    "cypress": "^4.12.1",
+    "cypress-html-validate": "^1.2.2",
+    "cypress-wait-until": "^1.7.1",
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-cypress": "^2.11.1",
+    "eslint-plugin-import": "^2.22.0"
+  }
 }
