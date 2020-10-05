@@ -8,8 +8,10 @@ html, body {
     font-size: 10px;
   
   }
-  
+
+ 
   body {
+    font-family: 'Noto Serif', serif;
     width: 70%;
     min-width: 800px;
     margin: 0 auto;
