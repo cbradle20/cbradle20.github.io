@@ -14,7 +14,6 @@ body {
   min-width: 800px;
   margin: 0 auto;
   background-color: rgb(153, 153, 255);
-
 }
 
 /* || typography */
@@ -65,13 +64,8 @@ body > * {
   padding: 1%;
 }
 
-<<<<<<< HEAD
 .main, .header, nav, .article, .aside, footer, section {
   background-color: yellow;
-=======
-.main, .header, nav, .article, .aside, .footer, section {
-  background-color: rgba(0,255,0,0.5);
->>>>>>> 216f73718e5015343209d6fbf68c1524d56e6ab2
   padding: 1%;
 }
 
