@@ -1,5 +1,7 @@
 // You may wish to find an effective randomizer function on MDN.
 
+const { getNewLibraryCopy } = require("cypress/types/bluebird");
+
 function range(int) {
   const arr = [];
   for (let i = 0; i < int; i += 1) {
@@ -40,7 +42,9 @@ document.body.addEventListener('submit', async (e) => {
       const arr = range(10)
       const li = document.createElement('li');
       li.className = 'flex-inner li';
-      $(ol).append(li);
+      newArr= arr.map(() => {
+        $(ol).append(li);
+      });
 
       //const descendList = arr.sort((b, a) => sortByKey(b, a, 'code'));
 
