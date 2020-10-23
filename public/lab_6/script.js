@@ -39,8 +39,9 @@ document.body.addEventListener('submit', async (e) => {
 
       const arr = range(10)
       const li = document.createElement('li');
-      li.className = 'flex-inner li'
-      
+      li.className = 'flex-inner li';
+      $(ol).append(li);
+
       //const descendList = arr.sort((b, a) => sortByKey(b, a, 'code'));
 
 
