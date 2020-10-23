@@ -34,23 +34,9 @@ document.body.addEventListener('submit', async (e) => {
         document.querySelector('.flex-inner').remove();
 
       }
-      const arr = range(10);
-      const newArr = arr.map(() => {
-        number = getRandomIntInclusive(0,243);
-        return fromServer[number];
-      });
-
-      const reverse = newArr.sort((a, b) => sortByKey(b, a, 'name'));
       const ol = document.createElement('ol');
-      ol.className = '.flex-inner';
+      ol.className = 'flex-inner';
       $('form').prepend(ol);
-
-      reverse.forEach((el, i) => {
-        const li = document.createElement('li');
-        $(li).append('<input type = "checkbox" value = $(el.code) id = $(el.code) />');
-        $(li).append('<label for = $(el.code)> $(el.name)</label>');
-        $(ol).append(li);
-      });
       console.log('fromServer', fromServer);
     })
     .catch((err) => console.log(err));
