@@ -42,6 +42,9 @@ document.body.addEventListener('submit', async (e) => {
 
       arr.forEach((el, i) =>{
         const li = document.createElement(li);
+        $(li).append('<input type = "checkbox" value = $(el.code) id = $(el.code)>');
+        $(li).append('<input for = $(el.code)>$(el.name)</label>');
+        $(ol).append(li);
 
       });
 
