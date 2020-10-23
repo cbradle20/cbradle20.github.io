@@ -38,6 +38,18 @@ document.body.addEventListener('submit', async (e) => {
       ol.className = 'flex-inner';
       $('form').prepend(ol);
       console.log('fromServer', fromServer);
+
+      const counts = range(10);
+      const newCounts = counts.map(() => {
+        const number = getRandomIntInclusive(0,243);
+        return fromServer[number];
+      });
+
+
+
+
+
+
     })
     .catch((err) => console.log(err));
 });
