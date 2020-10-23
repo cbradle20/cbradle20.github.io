@@ -38,15 +38,8 @@ document.body.addEventListener('submit', async (e) => {
       $('form').prepend(ol);
 
       const arr = range(10)
-      const descendList = arr.sort((b, a) => sortByKey(b, a, 'code'));
-
-      arr.forEach((el, i) =>{
-        const li = document.createElement(li);
-        $(li).append('<input type = "checkbox" value = $(el.code) id = $(el.code)>');
-        $(li).append('<input for = $(el.code)>$(el.name)</label>');
-        $(ol).append(li);
-
-      });
+      const li = document.createElement('li');
+      //const descendList = arr.sort((b, a) => sortByKey(b, a, 'code'));
 
 
 
