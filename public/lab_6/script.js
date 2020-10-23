@@ -37,9 +37,9 @@ document.body.addEventListener('submit', async (e) => {
       });
 
       const reverse = newArr.sort((a, b) => sortByKey(a, b, 'name'));
-      const ul = document.createElement('ul');
-      ul.classname = 'flex-inner';
-      $('form').prepend(ul);
+      const ol = document.createElement('ol');
+      ol.classname = 'flex-inner';
+      $('form').prepend(ol);
 
       reverse.forEach((el, k) => {
         const li = document.createElement('li');
