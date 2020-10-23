@@ -39,7 +39,7 @@ document.body.addEventListener('submit', async (e) => {
       ol.className = 'flex-inner';
       $('form').prepend(ol);
 
-      const arr = range(10)
+      const newArr = range(10)
       /*arr.forEach((el,i) => {
         const li = document.createElement('li');
     
