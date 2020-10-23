@@ -40,11 +40,11 @@ document.body.addEventListener('submit', async (e) => {
       $('form').prepend(ol);
 
       const arr = range(10)
-      const li = document.createElement('li');
-      li.className = 'flex-inner li';
-      newArr= arr.map(() => {
-        $(ol).append(li);
+      arr.forEach((el,i) => {
+        const li = document.createElement('li');
+    
       });
+
 
       //const descendList = arr.sort((b, a) => sortByKey(b, a, 'code'));
 
