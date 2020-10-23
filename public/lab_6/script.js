@@ -32,19 +32,18 @@ document.body.addEventListener('submit', async (e) => {
       // You're going to do your lab work in here. Replace this comment.
       if(document.querySelector('.flex-inner')){
         document.querySelector('.flex-inner').remove();
-
       }
       const ol = document.createElement('ol');
       ol.className = 'flex-inner';
       $('form').prepend(ol);
-      console.log('fromServer', fromServer);
 
-      const counts = range(10);
-      const newCounts = counts.map(() => {
-        const number = getRandomIntInclusive(0,243);
-        return fromServer[number];
+      const arr = range(10)
+      const descendList = arr.sort((b, a) => sortByKey(b, a, 'code'));
+
+      arr.forEach((el, i) =>{
+        const li = document.createElement(li);
+
       });
-
 
 
 
