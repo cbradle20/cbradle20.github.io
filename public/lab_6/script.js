@@ -40,11 +40,11 @@ document.body.addEventListener('submit', async (e) => {
       $('form').prepend(ol);
 
       const newArr = range(10)
-      /*arr.forEach((el,i) => {
+      arr.forEach((el,i) => {
         const li = document.createElement('li');
     
-      });*\
-
+      });
+      
 
       //const descendList = arr.sort((b, a) => sortByKey(b, a, 'code'));
 
