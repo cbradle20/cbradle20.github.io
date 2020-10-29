@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+
 function convertRestaurantsToCategories(restaurantList) {
   // process your restaurants here!
   return list;
