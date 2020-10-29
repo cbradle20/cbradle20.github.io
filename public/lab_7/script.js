@@ -6,7 +6,7 @@ function convertRestaurantsToCategories(restaurantList) {
   for(let i = 0; i < restaurantList.length; i += 1 ){
     catArray.push(restaurantList[i].category)
   }
-  console.log(catArray);
+  //console.log(catArray);
   for(let i = 0; i < catArray.length; i +=1){
     if(!result[catArray[i]]){
       result[catArray[i]] = 0;
