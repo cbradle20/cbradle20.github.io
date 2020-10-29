@@ -7,10 +7,13 @@ function convertRestaurantsToCategories(restaurantList) {
     catArray.push(restaurantList[i].category)
   }
   for(let i = 0; i < catArray.length; i +=1){
-
-
+    if(!result[catArray[i]]){
+      result[catArray[i]] = 0;
+    }
+    result[catArray[i]] += 1;
   }
-  return catArray;
+  
+  return result;
 }
 
 function makeYourOptionsObject(datapointsFromRestaurantsList) {
