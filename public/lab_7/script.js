@@ -7,10 +7,10 @@ function convertRestaurantsToCategories(restaurantList) {
     catArray.push(restaurantList[i].category)
   }
   for(let i = 0; i < catArray.length; i +=1){
-    
+
 
   }
-  return list;
+  return catArray;
 }
 
 function makeYourOptionsObject(datapointsFromRestaurantsList) {
