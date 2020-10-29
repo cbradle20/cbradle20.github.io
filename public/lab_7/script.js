@@ -13,8 +13,13 @@ function convertRestaurantsToCategories(restaurantList) {
     }
     result[catArray[i]] += 1;
   }
-  
+  const mapArr = Object.keys(result).map((category) => {
+
+
+  });
+  console.log(result);
   return result;
+  
 }
 
 function makeYourOptionsObject(datapointsFromRestaurantsList) {
