@@ -1,6 +1,15 @@
 
 function convertRestaurantsToCategories(restaurantList) {
   // process your restaurants here!
+  const catArray = [];
+  const result = {};
+  for( let i = 0; i < restaurantList.length; i += 1 ){
+    catArray.push(restaurantList[i].category)
+  }
+  for(let i = 0; i < catArray.length; i +=1){
+    
+
+  }
   return list;
 }
 
