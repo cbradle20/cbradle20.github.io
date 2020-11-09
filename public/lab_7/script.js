@@ -14,11 +14,10 @@ function convertRestaurantsToCategories(restaurantList) {
     }
     result[catArray[i]] += 1;
   }
-  const mapArr = Object.keys(result).map((category) => {
-    y : result[category];
-    label : category;
-
-  });
+  const obj = {
+    label : result[0].category,
+    y :result.length
+  };
   console.log(result);
   return result;
   
