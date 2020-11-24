@@ -64,7 +64,8 @@ ul.flex-outer{
   max-width : 225px;
 
 }
-.flex-outer > li > label + * {
+.flex-outer > li > label + * ,
+ul.flex-inner {
   flex : 1 0 225px;
 }
 
