@@ -64,6 +64,9 @@ ul.flex-outer{
   max-width : 225px;
 
 }
+.flex-outer > li > label + * {
+  flex : 1 0 225px;
+}
 
 label, input{
   display: table-cell;
