@@ -79,3 +79,8 @@ label{
   justify-content: center;
 }
 
+.flex-outer > li > button {
+  padding : 6px 12px;
+
+}
+
