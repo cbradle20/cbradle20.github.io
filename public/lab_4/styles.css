@@ -39,6 +39,11 @@ body{
   padding : 0;
 
 }
+.flex-outer ul{
+  max-width : 800px;
+  padding : 0px 16px;
+  
+}
 
 .flex-outer li, .flex-inner{
   display : flex;
