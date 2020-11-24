@@ -83,6 +83,10 @@ label{
   letter-spacing : 1.2px;
   border-radius : 3px;
 }
+.flex-inner li{
+  width: 80px;
+
+}
 
 .flex-outer > li > button {
   padding : 6px 12px;
