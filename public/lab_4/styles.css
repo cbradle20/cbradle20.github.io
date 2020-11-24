@@ -39,7 +39,7 @@ body{
   padding : 0;
 
 }
-.flex-outer ul{
+ul.flex-outer{
   max-width : 800px;
   padding : 0px 16px;
 }
