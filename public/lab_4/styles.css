@@ -39,7 +39,7 @@ body{
   padding : 0;
 
 }
-.flex-outer ul, .flex-inner{
+.flex-outer ul{
   max-width : 800px;
   padding : 0px 16px;
 }
@@ -52,7 +52,7 @@ body{
 }
 
 .flex-inner{
-  padding : 0 16px;
+  padding : 0 8px;
   justify-content : space-between;
 }
 
