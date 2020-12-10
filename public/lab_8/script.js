@@ -1,56 +1,5 @@
-function convertRestaurantsToCategories(restaurantList) {
-  const categoryArray = [];
-  const result = {};
-  for (let i = 0; i < restaurantList.length; i += 1) {
-    categoryArray.push(restaurantList[i].category);
-  }
-  // console.log(categoryArray);
-  for (let i = 0; i < categoryArray.length; i += 1) {
-    if (!result[categoryArray[i]]) {
-      result[categoryArray[i]] = 0;
-    }
-    result[categoryArray[i]] += 1;
-  }
-
-  const reply = Object.keys(result).map((category) => ({
-    y: result[category],
-    label: category
-  }));
-
-  console.log('reply',reply);
-  return reply;
-}
-
-function convertRestaurantsToCategories(restaurantList) {
-  return restaurantList.reduce((collection, currentItem, index) => {
-    const findCat = collection.find((f) => f.label === currentItem.category);
-    if (!findCat) {
-      collection.push({
-        label: item.category,
-        y: 1
-      });
-    } else {
-      const position = collection.findIndex((el) => el.label === item.category);
-      collection[position].y += 1;
-    }
-    return collection;
-  }, []);
-}
-
-// return array.reduce((collection, item, i) => {
-//   // for each item, check if we have a category for that item already
-//   const findCat = collection.find((findItem) => findItem.label === item.category);
-//   if (!findCat) {
-//     collection.push({
-//       label: item.category,
-//       y: 1
-//     });
-//   } else {
-//     const position = collection.findIndex((el) => el.label === item.category);
-//     collection[position].y += 1;
-//   }
-//   return collection;
-// }, []);
+import { open } from 'sqlite';
+import sqlite3 from 'sqlite3';
 
 function makeYourOptionsObject(datapointsFromRestaurantsList) {
   // set your chart configuration here!
@@ -110,7 +59,6 @@ function runThisWithResultsFromServer(jsonFromServer) {
       '#F2E75A'
     ]);
 
-  const dataPoints = convertRestaurantsToCategories(jsonFromServer);
   const options = makeYourOptionsObject(dataPoints);
 
   const chart = new CanvasJS.Chart('chartContainer', options);
@@ -136,3 +84,19 @@ document.body.addEventListener('submit', async (e) => {
       console.log(err);
     });
 });
+
+
+const dbSettings = {
+	filename: './tmp/database.db',
+	driver: sqlite3.Database
+	};
+
+  console.log('dbSettings', dbSettings)
+
+  data.forEach((entry) => {
+		const restaurant_name = entry.name;
+		const category = entry.category;
+
+		await db.exec(`INSERT INTO food (name, category, inspection_date, inspection_results, city, state, zip, owner, type) VALUES ("${name}", "${category}"), "${inspection_date}", "${inspection_results}, "${city}", "${state}", "${zip}", "${owner}", "${type}"`);
+		}
+  )
