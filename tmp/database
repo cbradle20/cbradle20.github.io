@@ -1,0 +1,39 @@
+const dbSettings = {
+	filename: './tmp/database.db',
+	driver: sqlite3.Database
+	};
+
+async function databaseInitialize(dbSettings) {
+	try {
+		const db = await open(dbSettings);
+        await db.exec("CREATE TABLE IF NOT EXISTS food (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT,
+            category TEXT,
+            inspection_date TEXT,
+            inspection_results TEXT,
+            city TEXT,
+            state TEXT,
+            zip TEXT, 
+            owner TEXT,
+            type TEXT
+	        ")
+            
+        const data = await dataFetch();
+        const test = await db.get("SELECT * FROM food")
+		console.log("Success");
+	}
+	catch(e) {
+		console.log("Error loading Database");
+
+	}
+}
+
+async function dataFetch() {
+	const url = "https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json";
+	const response = await fetch(url);
+
+	return response.json()
+
+}
+
