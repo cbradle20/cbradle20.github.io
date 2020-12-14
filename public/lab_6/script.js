@@ -8,8 +8,8 @@ function getRandomIntInclusive(min, max) {
 
 function range(int) {
   const arr = [];
-  for (let i = 0; i < int; i += 1) {
-    arr.push(i);
+  for (let k = 0; k < int; k += 1) {
+    arr.push(k);
   }
   return arr;
 }
