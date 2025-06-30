@@ -29,6 +29,13 @@ body {
     color: #2c3e50;
     font-size: 2rem;
     font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.logo h2 {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    font-weight: normal;
 }
 
 .nav ul {
@@ -75,12 +82,18 @@ body {
     padding: 0 20px;
 }
 
+.main-content section {
+    margin-bottom: 60px;
+}
+
 .main-content h2 {
     color: #2c3e50;
     margin-bottom: 20px;
+    font-size: 1.8rem;
 }
 
 .main-content p {
     color: #555;
     margin-bottom: 15px;
+    font-size: 1.1rem;
 }
